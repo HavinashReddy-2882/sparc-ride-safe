@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import { Eye, Mic, Navigation, AlertTriangle, CloudSun, Smartphone } from "lucide-react";
+import { Eye, AlertTriangle, Smartphone } from "lucide-react";
 
 const features = [
   { icon: Eye, title: "AI Vision", desc: "Real-time blind-spot detection using advanced computer vision algorithms" },
-  { icon: Mic, title: "Voice Commands", desc: "Hands-free operation with natural language voice recognition" },
-  { icon: Navigation, title: "Navigation", desc: "Integrated turn-by-turn navigation with audio guidance" },
   { icon: AlertTriangle, title: "Real-time Alerts", desc: "Instant haptic and audio warnings for detected hazards" },
-  { icon: CloudSun, title: "Weather Updates", desc: "Live weather conditions and road safety advisories" },
   { icon: Smartphone, title: "Smart Connectivity", desc: "Seamless phone integration for calls and notifications" },
 ];
 
