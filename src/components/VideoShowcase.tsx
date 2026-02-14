@@ -21,8 +21,8 @@ const VideoShowcase = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
-            { title: "Prototype Demo", desc: "See our AI detection module in action" },
-            { title: "Use Case Scenario", desc: "Real-world blind spot detection" },
+            { title: "Prototype Demo", desc: "See our AI detection module in action", src: "/videos/video1.mp4" },
+            { title: "Use Case Scenario", desc: "Real-world blind spot detection", src: "/videos/video2.mp4" },
           ].map((video, i) => (
             <motion.div
               key={video.title}
@@ -30,13 +30,18 @@ const VideoShowcase = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="glass-strong overflow-hidden group"
+              className="glass-strong overflow-hidden rounded-2xl"
             >
-              <div className="aspect-video relative bg-sparc-surface flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-sparc-cyan/5 to-sparc-purple/5" />
-                <button className="relative z-10 w-16 h-16 rounded-full glass flex items-center justify-center group-hover:scale-110 transition-transform glow-cyan">
-                  <Play size={24} className="text-sparc-cyan ml-1" />
-                </button>
+              <div className="aspect-video relative">
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                  playsInline
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div className="p-6">
                 <h3 className="font-heading font-semibold text-lg mb-1">{video.title}</h3>
