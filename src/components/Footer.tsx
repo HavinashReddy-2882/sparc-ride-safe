@@ -49,9 +49,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-muted-foreground">
-          © 2026 SPARC. All rights reserved.
-        </div>
       </div>
     </footer>
   );

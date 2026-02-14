@@ -4,12 +4,12 @@ import ProblemStatement from "@/components/ProblemStatement";
 import VideoShowcase from "@/components/VideoShowcase";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
-import TechSpecs from "@/components/TechSpecs";
+
 import MarketOpportunity from "@/components/MarketOpportunity";
 import CustomerSegments from "@/components/CustomerSegments";
 import SDGImpact from "@/components/SDGImpact";
 import Pricing from "@/components/Pricing";
-import Team from "@/components/Team";
+
 import WaitlistCTA from "@/components/WaitlistCTA";
 import Footer from "@/components/Footer";
 
@@ -22,12 +22,12 @@ const Index = () => {
       <VideoShowcase />
       <Features />
       <HowItWorks />
-      <TechSpecs />
+      
       <MarketOpportunity />
       <CustomerSegments />
       <SDGImpact />
       <Pricing />
-      <Team />
+      
       <WaitlistCTA />
       <Footer />
     </div>
