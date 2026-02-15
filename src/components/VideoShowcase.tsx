@@ -38,6 +38,7 @@ const VideoShowcase = () => {
                   controls
                   preload="metadata"
                   playsInline
+                  style={{ direction: "ltr" }}
                 >
                   <source src={video.src} type="video/mp4" />
                   Your browser does not support the video tag.

@@ -10,7 +10,7 @@ const features = [
 const Features = () => {
   return (
     <section id="features" className="section-padding relative">
-      <div className="absolute inset-0 grid-bg opacity-30" />
+      {/* Background removed */}
       <div className="container mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

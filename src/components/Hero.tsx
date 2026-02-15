@@ -4,7 +4,7 @@ import heroHelmet from "@/assets/hero-helmet.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-sparc-cyan/10 blur-[120px] animate-pulse_glow" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-sparc-purple/10 blur-[120px] animate-pulse_glow" />
@@ -49,7 +49,7 @@ const Hero = () => {
             </a>
             <a
               href="#demo"
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-8 py-4 font-semibold text-foreground transition-all hover:bg-white/5"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-8 py-4 font-semibold text-foreground transition-all hover:bg-muted"
             >
               <Play size={18} />
               Watch Demo

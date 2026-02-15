@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Mic, Brain, Bell, ShieldCheck } from "lucide-react";
+import { Brain, Bell, ShieldCheck } from "lucide-react";
 
 const steps = [
-  { icon: Mic, num: "01", title: "Voice Command", desc: "Rider activates detection with a simple voice command" },
-  { icon: Brain, num: "02", title: "AI Detection", desc: "Computer vision analyzes surroundings in real-time" },
-  { icon: Bell, num: "03", title: "Alert System", desc: "Instant audio and haptic feedback warns the rider" },
-  { icon: ShieldCheck, num: "04", title: "Safe Riding", desc: "Rider makes informed decisions with full awareness" },
+  { icon: Brain, num: "01", title: "AI Detection", desc: "Computer vision analyzes surroundings in real-time" },
+  { icon: Bell, num: "02", title: "Alert System", desc: "Instant audio and haptic feedback warns the rider" },
+  { icon: ShieldCheck, num: "03", title: "Safe Riding", desc: "Rider makes informed decisions with full awareness" },
 ];
 
 const HowItWorks = () => {
@@ -23,7 +22,7 @@ const HowItWorks = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <motion.div
               key={step.num}
