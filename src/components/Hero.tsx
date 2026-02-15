@@ -49,7 +49,7 @@ const Hero = () => {
             </a>
             <a
               href="#demo"
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-8 py-4 font-semibold text-foreground transition-all hover:bg-muted"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-8 py-4 font-semibold text-foreground transition-all hover:bg-white/5"
             >
               <Play size={18} />
               Watch Demo

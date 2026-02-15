@@ -21,8 +21,8 @@ const VideoShowcase = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
-            { title: "Prototype Demo", desc: "See our AI detection module in action", src: "/videos/video1.mp4" },
             { title: "Use Case Scenario", desc: "Real-world blind spot detection", src: "/videos/video2.mp4" },
+            { title: "Prototype Demo", desc: "See our AI detection module in action", src: "/videos/video1.mp4" },
           ].map((video, i) => (
             <motion.div
               key={video.title}

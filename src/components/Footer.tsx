@@ -2,7 +2,7 @@ import { Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-16 px-4">
+    <footer className="border-t border-white/10 py-16 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}

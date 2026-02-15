@@ -22,21 +22,24 @@ const Index = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Rotate from -15deg to 15deg over the page scroll
-  const rotation = -15 + (scrollY / (document.body.scrollHeight - window.innerHeight || 1)) * 30;
+  // Horizontal rotation: left-facing at top, front at middle, right-facing at bottom
+  const scrollProgress = scrollY / (document.body.scrollHeight - window.innerHeight || 1);
+  const rotationY = -60 + scrollProgress * 120; // -60deg to 60deg on Y axis
 
   return (
     <div className="min-h-screen bg-background relative">
       {/* Fixed helmet blueprint background with scroll rotation */}
       <div
-        className="fixed inset-0 z-0 opacity-[0.07] dark:opacity-[0.07] pointer-events-none flex items-center justify-center"
+        className="fixed inset-0 z-0 opacity-[0.07] pointer-events-none flex items-center justify-center"
+        style={{ perspective: "1000px" }}
       >
         <img
           src={helmetBlueprint}
           alt=""
-          className="w-[80vw] max-w-3xl transition-transform duration-100 ease-out"
+          className="w-[80vw] max-w-3xl"
           style={{
-            transform: `rotate(${rotation}deg) scale(1.2)`,
+            transform: `rotateY(${rotationY}deg) scale(1.2)`,
+            transition: "transform 0.1s ease-out",
           }}
         />
       </div>
