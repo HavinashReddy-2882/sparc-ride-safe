@@ -54,55 +54,6 @@
     --sidebar-border: 240 15% 20%;
     --sidebar-ring: 187 100% 50%;
   }
-
-  .light {
-    --background: 220 20% 96%;
-    --foreground: 240 20% 12%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 20% 12%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 20% 12%;
-
-    --primary: 187 100% 38%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 220 14% 90%;
-    --secondary-foreground: 240 20% 12%;
-
-    --muted: 220 14% 92%;
-    --muted-foreground: 215 16% 40%;
-
-    --accent: 258 70% 55%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 13% 85%;
-    --input: 220 13% 85%;
-    --ring: 187 100% 38%;
-
-    --sparc-cyan: 187 100% 38%;
-    --sparc-blue: 216 100% 42%;
-    --sparc-purple: 258 70% 55%;
-    --sparc-indigo: 239 70% 55%;
-    --sparc-orange: 16 90% 50%;
-    --sparc-text-secondary: 215 16% 40%;
-    --sparc-text-tertiary: 213 20% 30%;
-    --sparc-surface: 220 14% 92%;
-    --sparc-surface-light: 220 14% 96%;
-
-    --sidebar-background: 220 20% 96%;
-    --sidebar-foreground: 240 20% 12%;
-    --sidebar-primary: 187 100% 38%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 90%;
-    --sidebar-accent-foreground: 240 20% 12%;
-    --sidebar-border: 220 13% 85%;
-    --sidebar-ring: 187 100% 38%;
-  }
 }
 
 @layer base {
@@ -119,10 +70,10 @@
 
 @layer components {
   .glass {
-    @apply bg-sparc-surface/50 backdrop-blur-xl border border-border rounded-xl;
+    @apply bg-sparc-surface/50 backdrop-blur-xl border border-white/10 rounded-xl;
   }
   .glass-strong {
-    @apply bg-sparc-surface/70 backdrop-blur-2xl border border-border rounded-2xl;
+    @apply bg-sparc-surface/70 backdrop-blur-2xl border border-white/15 rounded-2xl;
   }
   .gradient-text-cyan {
     @apply bg-gradient-to-r from-sparc-cyan to-sparc-blue bg-clip-text text-transparent;
