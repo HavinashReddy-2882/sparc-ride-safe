@@ -30,7 +30,7 @@ const Index = () => {
     <div className="min-h-screen bg-background relative">
       {/* Fixed helmet blueprint background with scroll rotation */}
       <div
-        className="fixed inset-0 z-0 opacity-[0.07] pointer-events-none flex items-center justify-center"
+        className="fixed inset-0 z-0 opacity-[0.12] pointer-events-none flex items-center justify-center"
         style={{ perspective: "1000px" }}
       >
         <img
