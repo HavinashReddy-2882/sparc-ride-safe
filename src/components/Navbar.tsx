@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Problem", href: "#problem" },
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Team", href: "#team" },
 ];
 
 const Navbar = () => {
@@ -45,6 +45,7 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
           <a
             href="#waitlist"
             className="rounded-lg bg-sparc-orange px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 glow-orange"
